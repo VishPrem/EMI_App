@@ -8,11 +8,10 @@ def calculate_outstanding_balance(p, n, r, m):
 
 st.title('Improvised EMI Calculator App')
 
-m = st.slider("Time (in months)", 1, 12)
-principal = st.slider("Principal Loan Amount", 1000, 1000000)
-tenure = st.slider("Loan Period (in years)", 1, 30)
-roi = st.slider("Rate of Interest (in % per annum)", 1, 15)
-
+m = 4
+principal = 50000
+tenure = 2
+roi = 5.05
 n = tenure * 12
 r = roi / 12
 
